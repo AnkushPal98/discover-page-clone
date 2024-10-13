@@ -1,0 +1,93 @@
+.chat-bar {
+    position: fixed;
+    bottom: 20px; /* 20px from the bottom of the screen */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust positioning to center */
+    width: 80%; /* Adjust the width of the chat bar */
+    max-width: 600px; /* Maximum width */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-bar input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .chat-bar button {
+    margin-left: 10px;
+    background-color: #008f99;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .chat-bar button:hover {
+    background-color: #00a7b3;
+  }
+
+  /* MEDIA QUERIES */
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .chat-bar {
+      width: 80%; /* Reduce width slightly for tablet */
+      max-width: 500px; /* Reduce max width */
+  }
+
+  .chat-bar input {
+      font-size: 14px; /* Smaller font size for input field */
+  }
+
+  .chat-bar button {
+      padding: 10px 15px; /* Slightly smaller padding for tablet */
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .chat-bar {
+      width: 80%; /* Almost full width for mobile */
+      max-width: 400px; /* Reduce max width further for mobile */
+  }
+
+  .chat-bar input {
+      font-size: 14px; /* Smaller font for input field */
+      padding: 8px; /* Reduce padding for mobile */
+  }
+
+  .chat-bar button {
+      padding: 8px 12px; /* Reduce button padding */
+      font-size: 14px; /* Adjust font size for mobile */
+  }
+}
+
+/* Extra small mobile view */
+@media (max-width: 480px) {
+  .chat-bar {
+      width: 80%; /* Full width for extra small mobile */
+      bottom: 10px; /* Adjust position to be closer to bottom */
+  }
+
+  .chat-bar input {
+      font-size: 12px; /* Even smaller font for very small screens */
+      padding: 6px; /* Adjust padding */
+  }
+
+  .chat-bar button {
+      padding: 6px 10px; /* Reduce padding for smaller screens */
+      font-size: 12px; /* Smaller font size */
+  }
+}
+  
