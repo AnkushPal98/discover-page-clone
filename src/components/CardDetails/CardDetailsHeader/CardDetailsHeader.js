@@ -36,12 +36,12 @@ const CardDetailsHeader = () => {
             <button className="card-details-bookmark-btn" onClick={toggleBookmark}>
             {bookmarked ? (
                 <>
-            <img src="/bookmarked.svg" alt="bookmark-icon" className="icon" />
+            <img src="/icon/bookmarked.svg" alt="bookmark-icon" className="icon" />
             <span className="tooltip-text">Bookmarked</span>
             </>
             ) : (
                 <>
-            <img src="/bookmark.svg" alt="bookmark-icon" className="icon" />
+            <img src="/icon/bookmark.svg" alt="bookmark-icon" className="icon" />
             <span className="tooltip-text">Save to Bookmarks</span>
                 </>
             )}
@@ -51,19 +51,19 @@ const CardDetailsHeader = () => {
             <button className="link-btn" onClick={copyLinkToClipboard }>
             {copySuccess ? (
                 <>
-            <img src="/check.png" alt="link-icon" className="icon" />
+            <img src="/icon/check.png" alt="link-icon" className="icon" />
             <span className="tooltip-text">Copied</span>
             </>
             ) : (
                 <>
-            <img src="/hyperlink.png" alt="link-icon" className="icon" />
+            <img src="/icon/hyperlink.png" alt="link-icon" className="icon" />
             <span className="tooltip-text">Copy Link</span>
                 </>
             )}
             </button>
             
             {/* share button */}
-            <button onClick={toggleModal} className='share-btn'><img src='/share.png' alt='share-icon' className='share-icon'/> share</button>
+            <button onClick={toggleModal} className='share-btn'><img src='/icon/share.png' alt='share-icon' className='share-icon'/> share</button>
         </nav>
       </header>
       <hr></hr>

@@ -1,7 +1,7 @@
 .card-details {
     padding: 0px 200px;
     max-width: auto;
-    margin: 0 auto;
+    margin-top: 2%;
     overflow: hidden;
     border-radius: 8px;
     padding-bottom: 100px; /* Add padding to prevent overlap with the chat bar */
@@ -37,7 +37,7 @@
 /* Tablet view */
 @media (max-width: 1024px) {
   .card-details {
-      padding: 0px 100px;
+      padding: 0px 100px 100px;
   }
 
   .card-details-image {
@@ -56,7 +56,7 @@
 /* Mobile view */
 @media (max-width: 768px) {
   .card-details {
-      padding: 0px 20px;
+      padding: 0px 20px 100px;
   }
 
   .card-details-image {
@@ -75,7 +75,7 @@
 /* Extra small mobile view */
 @media (max-width: 480px) {
   .card-details {
-      padding: 0px 10px;
+      padding: 0px 10px 100px;
   }
 
   .card-details-image {

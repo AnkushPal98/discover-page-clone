@@ -26,13 +26,13 @@ const DiscoverCard = ({ id, title, description, imageUrl }) => {
       <button className="bookmark-btn" onClick={toggleBookmark}>
         {bookmarked ? (
             <>
-          <img src="bookmarked.svg" alt="bookmark-icon" className="icon" />
-          <span className="tooltip-text">Bookmarked</span>
+          <img src="/icon/bookmarked.svg" alt="bookmark-icon" className="icon" />
+          <span className="card-tooltip-text">Bookmarked</span>
           </>
         ) : (
             <>
-          <img src="bookmark.svg" alt="bookmark-icon" className="icon" />
-          <span className="tooltip-text">Save to Bookmarks</span>
+          <img src="/icon/bookmark.svg" alt="bookmark-icon" className="icon" />
+          <span className="card-tooltip-text">Save to Bookmarks</span>
             </>
         )}
         

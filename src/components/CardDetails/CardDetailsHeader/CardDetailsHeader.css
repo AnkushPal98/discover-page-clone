@@ -4,8 +4,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: rgb(223, 220, 217);
+    padding: 5px 20px;
+    background-color: rgba(255, 255, 255, 0.918);
+    backdrop-filter: blur(20px); /* The blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
     color: white;
     position: sticky;
     top: 0;
@@ -19,14 +21,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px; /* Adjust this value for spacing between buttons */
+  gap: 10px; /* Adjust this value for spacing between buttons */
   margin-left: auto; /* Pushes buttons to the right */
 }
   
 
 .icon {
     width: 20px;
-    height: 30px;
+    height: 20px;
   }
 
 /* Bookmark button styles */
@@ -38,7 +40,7 @@
     border-radius: 5px;
     text-align: center;
     width: 40px;
-    height: 40px;
+    height: 35px;
   }
 
 /* Link button styles */
@@ -50,7 +52,7 @@
     position: relative;  /*Important for tooltip positioning */
     border-radius: 5px;
     width: 40px;
-    height: 40px;
+    height: 35px;
     text-align: center;
   }
 
@@ -65,7 +67,7 @@
     cursor: pointer;
     border-radius: 5px;
     width: auto;
-    height: 40px;
+    height: 35px;
     text-align: center;
 }
 

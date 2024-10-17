@@ -54,7 +54,7 @@ const DiscoverPage = () => {
       <div className={`discover-page-wrapper ${isModalOpen ? "blur" : ""}`}>
         <div className="heading">
           <img
-            src="/discover.png"
+            src="/icon/discover.png"
             alt="discover-icon"
             className="discover-icon"
           />
@@ -99,12 +99,13 @@ const DiscoverPage = () => {
             >
               Entertainment
             </button>
-            <button onClick={handleFilterClick}>
+            <button className="filter-btn" onClick={handleFilterClick}>
               <img
-                src="/filter.png"
+                src="/icon/filter.png"
                 alt="filter-icon"
                 className="filter-icon"
               />
+              <span className="filter-tooltip-text">Personalize Discover</span>
             </button>
           </nav>
         </header>
